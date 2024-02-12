@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--Valentine Megan Ugro H01 Feb 14 2024-->
+<meta charset="utf-8">
+<title>Megan's Valentine</title>
+
+<style>
+body{background-color: pink;
+font-family: Papyrus, fantasy;
+text-align: center
+}
+
+h2{color: #fa3275;
+font-size: 60pt;
+}
+
+h1{background-color: #fa3275;
+color: pink;
+font-size: 90pt;
+}
+
+span{color: white;
+font-size: 40pt;
+border: 3px solid white;
+}
+
+#quest:hover{border: 15px dotted red}
+
+</style>
+
+</head>
+
+<body>
+
+<h2 onmouseover="this.style.color='red';">Happy Valentine's Day!</h2>
+
+<h1 id="quest">Will you be my Valentine?</h1>
+
+<img id="h" src="heart.png" alt="heart" height="150" width="150">
+
+<p id="y"><span 
+onclick="this.innerHTML='YAYY!!!'; 
+this.style.fontSize='180pt';
+document.getElementById('n').innerHTML='xoxo';
+document.getElementById('n').style.color='white';
+document.getElementById('n').style.fontSize='15pt';
+document.getElementById('h').style.height='300px';
+document.getElementById('h').style.width='300px';">
+Yes</span></p>
+
+<p id="n"><span 
+onclick="this.innerHTML='Really, why not?!'; 
+this.style.fontSize='15pt'; 
+document.getElementById('y').innerHTML='Ugh, PLEASEEE!!!'; 
+document.getElementById('y').style.color='white'; 
+document.getElementById('y').style.fontSize='120pt'; 
+document.getElementById('h').src='brokenheart.png';  
+document.getElementById('h').style.height='300px'; 
+document.getElementById('h').style.width='350px';">
+No</span></p>
+
+</body>
+</html>
